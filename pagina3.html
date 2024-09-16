@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pagina3.css">
+  <title>Cadastro de Veículos</title>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Cadastro de Veículos</h2>
+    <form action="/cadastrar_veiculo" method="POST">
+      <label for="marca">Marca:</label>
+      <input type="text" id="marca" name="marca" required>
+
+      <label for="modelo">Modelo:</label>
+      <input type="text" id="modelo" name="modelo" required>
+
+      <label for="ano">Ano:</label>
+      <input type="number" id="ano" name="ano" min="1900" max="2024" required>
+
+      <label for="tipo">Tipo:</label>
+      <select id="tipo" name="tipo" required>
+        <option value="Sedan">Sedan</option>
+        <option value="Hatchback">Hatchback</option>
+        <option value="SUV">SUV</option>
+        <option value="Esportivo">Esportivo</option>
+        <option value="Picape">Picape</option>
+        <option value="Elétrico">Elétrico</option>
+      </select>
+
+      <label for="combustivel">Combustível:</label>
+      <select id="combustivel" name="combustivel" required>
+        <option value="Gasolina">Gasolina</option>
+        <option value="Álcool">Álcool</option>
+        <option value="Flex">Flex</option>
+        <option value="Diesel">Diesel</option>
+        <option value="Elétrico">Elétrico</option>
+        <option value="Híbrido">Híbrido</option>
+      </select>
+
+      <label for="preco">Preço (R$):</label>
+      <input type="number" id="preco" name="preco" required>
+
+      <input type="submit" value="Cadastrar Veículo">
+    </form>
+  </div>
+
+</body>
+</html>
